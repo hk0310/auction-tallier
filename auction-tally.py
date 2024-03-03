@@ -25,9 +25,9 @@ class AuctionTally():
     
 if __name__ == "__main__":
     tallier = AuctionTally()
-    url = "https://tiltify.com/@dokibird/auctions/dokicharity2024"
-    class_name = "iHbIIK"
+    url = input("Enter the auction page url: ")
+    class_name = input("Enter the class name of the bidding ammount element: ")
     total = tallier.tally(url, class_name)
-    print("${:,.2f}".format(round(total, 2)))
+    print("\nThe total bidding ammount is " + "${:,.2f}".format(round(total, 2)))
     
     
